@@ -1,5 +1,6 @@
 package com.cdn.pdf;
 
+import com.itextpdf.text.Element;
 import com.itextpdf.text.pdf.PdfDocument;
 import com.itextpdf.text.pdf.PdfPage;
 
@@ -20,8 +21,8 @@ public class TextToPdf {
 
         try {
             PdfDocument pdfDocument = new PdfDocument();
-            PdfPage pdfPage = new PdfPage();
-            pdfDocument.add(pdfPage);
+            /*PdfPage pdfPage = new PdfPage();
+            pdfDocument.add((Element) pdfPage);*/
 
             pdfGenerated = true;
         } catch (Exception e) {
